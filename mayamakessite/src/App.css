@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Rubik+Mono+One&display=swap');
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+body{
+  color: white;
+}
+h1{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2rem;
+  color: white;
+  margin: 5vh;
+}
+
+/*##################### NAV CSS #####################*/
+nav{
+  padding: .5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: white solid 1px;
+}
+.nav-links{
+  display: flex;
+}
+li{
+  list-style-type: none;
+  margin: 0 1rem;
+}
+.banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: #151515;
+}
+a{
+  text-decoration: none;
+  color: white;
+}
+
+/*############## MAIN BANNERS CSS ##################*/
+.banner{
+
+}
+.change-box{
+  overflow: hidden;
+  position: relative;
+  height: 3rem;
+}
+
+.adj-list{
+  display: inline-block;
+  color: #fff;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+  -webkit-animation: move 5s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-delay: 5s;
+}
+
+@keyframes move {
+  0%  { top: -5px; }
+  20% { top: -70px; }
+  40% { top: -125px; }
+}
+
+.app-tag{
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #51CB20;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.tingz-tag{
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #DEB841;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.art-tag{
+  font-family: 'Rubik Mono One', sans-serif;
+  color: #EE4520;
+  font-size: 2.5rem;
+}
+hr{
+  width: 90%;
+  border: 1px solid white;
+}
+
+/*################# ABOUT ME ##################*/
+.about-me{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  color: white;
+  margin: 2vh 10vh;
+}
+.bio{
+  text-align: left;
+  padding: 10%;
+}
+h2{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size: 2rem;
+  color: white;
+}
+
+/*################ WHAT I MAKE ################*/
+.make-boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5vh;
+}
+.box{
+  border: 1px solid white;
+  padding: 5px;
+  margin: 10px;
+  min-width: 30%;
+  min-height: 20vh;
+  text-align: center;
+}
+.box h3{
+  font-family: 'Rubik Mono One', cursive;
+  font-size: 1.5rem;
+  color: white;
+}
+button{
+  font-family: 'Rubik Mono One', cursive;
+  font-size: 1rem;
+  color: #151515;
+  padding: 5px;
+  margin: 5px;
+}
+.swe{
+  background-color: #51CB20;
+}
+.fa{
+  background-color: #DEB841;
+}
+.lit{
+  background-color: #EE4520;
+}
