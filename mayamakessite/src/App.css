@@ -34,7 +34,7 @@ li{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
+  height: 70%;
   background-color: #151515;
 }
 a{
@@ -44,13 +44,9 @@ a{
 
 /*############## MAIN BANNERS CSS ##################*/
 .banner{
+  flex-wrap: wrap;
+}
 
-}
-.change-box{
-  overflow: hidden;
-  position: relative;
-  height: 3rem;
-}
 
 .adj-list{
   display: inline-block;
@@ -64,16 +60,62 @@ a{
   -webkit-animation-delay: 5s;
 }
 
-@keyframes move {
-  0%  { top: -5px; }
-  20% { top: -70px; }
-  40% { top: -125px; }
+@media screen and (min-width: 768px) {
+  .change-box{
+    overflow: hidden;
+    position: relative;
+    height: 3rem;
+  }
+  .banner{
+    height: 70vh;
+  }
+  @keyframes move {
+    0%  { top: -5px; }
+    20% { top: -70px; }
+    40% { top: -130px; }
+  }
+  .app-tag{
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #51CB20;
+    font-size: 250%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tingz-tag{
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #DEB841;
+    font-size: 250%;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  
+  .art-tag{
+    font-family: 'Rubik Mono One', sans-serif;
+    color: #EE4520;
+    font-size: 250%;
+    flex-wrap: wrap;
+  }
 }
 
+@media screen and (max-width: 768px) {
+  h1{
+    font-size: 1.5rem;
+  }
+  .app-tag, .tingz-tag, .art-tag {
+    font-size: 150%;
+  }
+  .box {
+    min-width: 80%;
+  }
+  .banner {
+    height: 70vh;
+  }
+}
 .app-tag{
   font-family: 'Rubik Mono One', sans-serif;
   color: #51CB20;
-  font-size: 2.5rem;
   margin: 0;
   padding: 0;
 }
@@ -81,15 +123,15 @@ a{
 .tingz-tag{
   font-family: 'Rubik Mono One', sans-serif;
   color: #DEB841;
-  font-size: 2.5rem;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .art-tag{
   font-family: 'Rubik Mono One', sans-serif;
   color: #EE4520;
-  font-size: 2.5rem;
+  flex-wrap: wrap;
 }
 hr{
   width: 90%;
@@ -100,10 +142,12 @@ hr{
 .about-me{
   display: flex;
   justify-content: center;
+  text-align: center;
   align-items: center;
   height: 50vh;
   color: white;
   margin: 2vh 10vh;
+  flex-wrap: wrap;
 }
 .bio{
   text-align: left;
@@ -121,12 +165,13 @@ h2{
   justify-content: center;
   align-items: center;
   margin: 5vh;
+  flex-wrap: wrap;
 }
 .box{
   border: 1px solid white;
   padding: 5px;
   margin: 10px;
-  min-width: 30%;
+  min-width: 30rem;
   min-height: 20vh;
   text-align: center;
 }
