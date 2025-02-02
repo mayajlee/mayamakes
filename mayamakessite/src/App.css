@@ -3,6 +3,7 @@
 #root {
   margin: 0 auto;
   text-align: center;
+  padding: 0 2rem;
 }
 
 body{
@@ -17,7 +18,7 @@ h1{
 
 /*##################### NAV CSS #####################*/
 nav{
-  padding: .5rem;
+  padding: .5rem 2rem .5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,6 +46,7 @@ a{
 /*############## MAIN BANNERS CSS ##################*/
 .banner{
   flex-wrap: wrap;
+  height: 80vh;
 }
 
 
@@ -60,62 +62,11 @@ a{
   -webkit-animation-delay: 5s;
 }
 
-@media screen and (min-width: 768px) {
-  .change-box{
-    overflow: hidden;
-    position: relative;
-    height: 3rem;
-  }
-  .banner{
-    height: 70vh;
-  }
-  @keyframes move {
-    0%  { top: -5px; }
-    20% { top: -70px; }
-    40% { top: -130px; }
-  }
-  .app-tag{
-    font-family: 'Rubik Mono One', sans-serif;
-    color: #51CB20;
-    font-size: 250%;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .tingz-tag{
-    font-family: 'Rubik Mono One', sans-serif;
-    color: #DEB841;
-    font-size: 250%;
-    margin: 0;
-    padding: 0;
-    flex-wrap: wrap;
-  }
-  
-  .art-tag{
-    font-family: 'Rubik Mono One', sans-serif;
-    color: #EE4520;
-    font-size: 250%;
-    flex-wrap: wrap;
-  }
-}
 
-@media screen and (max-width: 768px) {
-  h1{
-    font-size: 1.5rem;
-  }
-  .app-tag, .tingz-tag, .art-tag {
-    font-size: 150%;
-  }
-  .box {
-    min-width: 80%;
-  }
-  .banner {
-    height: 70vh;
-  }
-}
 .app-tag{
   font-family: 'Rubik Mono One', sans-serif;
   color: #51CB20;
+  font-size: 250%;
   margin: 0;
   padding: 0;
 }
@@ -123,6 +74,7 @@ a{
 .tingz-tag{
   font-family: 'Rubik Mono One', sans-serif;
   color: #DEB841;
+  font-size: 250%;
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
@@ -131,8 +83,10 @@ a{
 .art-tag{
   font-family: 'Rubik Mono One', sans-serif;
   color: #EE4520;
+  font-size: 250%;
   flex-wrap: wrap;
 }
+
 hr{
   width: 90%;
   border: 1px solid white;
@@ -144,10 +98,15 @@ hr{
   justify-content: center;
   text-align: center;
   align-items: center;
-  height: 50vh;
+  height: 40vh;
   color: white;
   margin: 2vh 10vh;
-  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  .about-me {
+    flex-wrap: wrap;
+  }
 }
 .bio{
   text-align: left;
@@ -162,17 +121,18 @@ h2{
 /*################ WHAT I MAKE ################*/
 .make-boxes{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 5vh;
-  flex-wrap: wrap;
 }
+
 .box{
   border: 1px solid white;
   padding: 5px;
   margin: 10px;
-  min-width: 30rem;
-  min-height: 20vh;
+  width: 50vh;
+  height: 50vh;
   text-align: center;
 }
 .box h3{
@@ -189,10 +149,13 @@ button{
 }
 .swe{
   background-color: #51CB20;
+  width: 33%;
 }
 .fa{
   background-color: #DEB841;
+  width: 33%;
 }
 .lit{
   background-color: #EE4520;
+  width: 33%;
 }
